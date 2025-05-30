@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "JuniorFeedbackTask.Controllers.FeedbackController",
+    "Method": "SendFeedback",
+    "RelativePath": "api/Feedback",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "JuniorFeedbackTask.Models.FeedbackDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

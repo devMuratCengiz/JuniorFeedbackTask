@@ -1,0 +1,26 @@
+# .NET specific ignores
+/src/backend/bin/
+/src/backend/obj/
+/src/backend/*.pdb
+/src/backend/*.suo
+/src/backend/*.user
+/src/backend/*.userosscache
+/src/backend/*.sln.docstates
+/src/backend/*.vsp
+/src/backend/*.vspscc
+/src/backend/*.dbmdl
+/src/backend/.vs/
+/src/backend/project.lock.json
+/src/backend/project.fragment.lock.json
+/src/backend/publish/
+/src/backend/wwwroot/
+
+# React specific ignores
+/src/frontend/node_modules/
+/src/frontend/build/
+/src/frontend/.env
+/src/frontend/.DS_Store
+
+# General ignores
+.DS_Store
+Thumbs.db
