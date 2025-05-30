@@ -35,7 +35,7 @@ Aşağıdaki araçların sisteminizde kurulu olması gerekir:
 ### 2. RabbitMQ’yu Docker Üzerinden Çalıştırma
 
 Aşağıdaki komutu terminale yazalım.
-docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4-management
+- docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4-management
 
 RabbitMQ Management Paneli: http://localhost:15672
 - Kullanıcı adı: guest
@@ -58,7 +58,7 @@ Varsayılan bağlantı: mongodb://localhost:27017
 - dotnet build
 - dotnet run
 
-Api isteğini swagger kullanrak yaptığımız adres: https://localhost:7077/swagger/index.html 
+Api isteğini swagger kullanarak yaptığımız adres: https://localhost:7077/swagger/index.html 
 
 ---
 
