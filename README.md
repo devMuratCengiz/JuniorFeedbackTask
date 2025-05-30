@@ -53,10 +53,10 @@ Varsayılan bağlantı: mongodb://localhost:27017
 
 ### 4. Backend (.NET API) Kurulumu
 
-cd backend
-dotnet restore
-dotnet build
-dotnet run
+- cd backend
+- dotnet restore
+- dotnet build
+- dotnet run
 
 Api isteğini swagger kullanrak yaptığımız adres: https://localhost:7077/swagger/index.html 
 
@@ -64,9 +64,9 @@ Api isteğini swagger kullanrak yaptığımız adres: https://localhost:7077/swa
 
 ### 5. Frontend (React) Kurulumu
 
-cd frontend
-npm install
-npm start
+- cd frontend
+- npm install
+- npm start
 
 React uygulaması http://localhost:5173 adresinde çalışır.
 
