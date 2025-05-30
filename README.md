@@ -1,10 +1,10 @@
 # Junior Feedback Uygulaması
 
-Bu proje, kullanıcıların bir form aracılığıyla feedback gönderebildiği bir web uygulamasıdır. Feedbackler frontend'den API'ye gönderilir, RabbitMQ kuyruğu aracılığıyla alınır ve MongoDB'ye kaydedilir.
+Bu proje, kullanıcıların bir form aracılığıyla feedback gönderebildiği bir web uygulamasıdır. Feedbackler frontend'den API'ye gönderilir, RabbitMQ aracılığıyla kuyruğa alınır ve MongoDB'ye kaydedilir.
 
 ## Kullanılan Teknolojiler
 
-### 🖥 Frontend (React)
+### Frontend (React)
 - React.js
 - Axios (API istekleri için)
 - Form validasyon
@@ -35,13 +35,13 @@ Aşağıdaki araçların sisteminizde kurulu olması gerekir:
 ### 2. RabbitMQ’yu Docker Üzerinden Çalıştırma
 
 Aşağıdaki komutu terminale yazalım.
-docker run -d --hostname rabbitmq-local --name rabbitmq \
-    -p 5672:5672 -p 15672:15672 \
-    rabbitmq:3-management
+docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4-management
 
 RabbitMQ Management Paneli: http://localhost:15672
 - Kullanıcı adı: guest
 - Şifre: guest
+
+---
 
 ### 3. MongoDB'yi Lokal Olarak Başlatma
 
@@ -49,6 +49,7 @@ MongoDB'yi yüklediyseniz, servis olarak çalıştığından emin olun:
 
 Varsayılan bağlantı: mongodb://localhost:27017
 
+---
 
 ### 4. Backend (.NET API) Kurulumu
 
@@ -59,6 +60,8 @@ dotnet run
 
 Api isteğini swagger kullanrak yaptığımız adres: https://localhost:7077/swagger/index.html 
 
+---
+
 ### 5. Frontend (React) Kurulumu
 
 cd frontend
@@ -66,6 +69,8 @@ npm install
 npm start
 
 React uygulaması http://localhost:5173 adresinde çalışır.
+
+---
 
 ### 6. Feedback Verisi Gönderme Süreci
 
@@ -75,6 +80,7 @@ React uygulaması http://localhost:5173 adresinde çalışır.
 - ConsumerService, kuyruktan veriyi alır.
 - Alınan veri MongoDB'ye kaydedilir.
 
+---
 
 ### Örnek Ortam Ayarları (appsettings.json)
 
@@ -84,6 +90,7 @@ React uygulaması http://localhost:5173 adresinde çalışır.
   "CollectionName": "feedbacks"
 }
 
+---
 
 ### API Endpoint
 POST /api/feedback – Yeni geri bildirim gönder
