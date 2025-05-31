@@ -58,7 +58,8 @@ Varsayılan bağlantı: mongodb://localhost:27017
 - dotnet build
 - dotnet run
 
-Api isteğini swagger kullanarak yaptığımız adres: https://localhost:7077/swagger/index.html 
+Api isteğini yaptığımız adres: 
+https://localhost:7077/api/Feedback
 
 ---
 
